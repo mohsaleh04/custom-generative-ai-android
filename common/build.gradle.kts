@@ -20,6 +20,7 @@ plugins {
     id("com.ncorti.ktfmt.gradle")
     id("changelog-plugin")
     id("release-plugin")
+    id("com.gradleup.nmcp")
     kotlin("android")
     kotlin("plugin.serialization")
 }

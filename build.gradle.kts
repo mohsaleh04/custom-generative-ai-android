@@ -20,6 +20,8 @@ plugins {
     kotlin("android") version "1.8.22" apply false
     kotlin("plugin.serialization") version "1.8.22" apply false
     id("com.ncorti.ktfmt.gradle") version "0.18.0" apply false
+    id("com.vanniktech.maven.publish") version "0.28.0" apply false
+    id("com.gradleup.nmcp") version "0.0.7" apply false
     id("license-plugin")
     id("multi-project-plugin")
 }

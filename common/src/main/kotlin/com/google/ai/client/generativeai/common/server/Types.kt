@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+@file:OptIn(ExperimentalSerializationApi::class)
+
 package com.google.ai.client.generativeai.common.server
 
 import com.google.ai.client.generativeai.common.shared.Content

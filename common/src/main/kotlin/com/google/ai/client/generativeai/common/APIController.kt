@@ -223,7 +223,7 @@ internal constructor(
           val channel = it.bodyAsChannel()
           val flow = JSON.decodeToFlow<R>(channel)
 
-          flow.collect { send(it) }
+          flow.collect { it2 -> send(it2) }
         }
     }
   }
@@ -259,7 +259,7 @@ private suspend fun validateResponse(response: HttpResponse) {
   if (message.contains("quota")) {
     throw QuotaExceededException(message)
   }
-  if (error.details?.any { "SERVICE_DISABLED" == it.reason } == true) {
+  if (error.details.any { "SERVICE_DISABLED" == it.reason }) {
     throw ServiceDisabledException(message)
   }
   throw ServerException(message)
