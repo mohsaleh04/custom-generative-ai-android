@@ -20,7 +20,9 @@ plugins {
     id("com.ncorti.ktfmt.gradle")
     id("changelog-plugin")
     id("release-plugin")
-    id("com.gradleup.nmcp")
+    id("com.vanniktech.maven.publish") version "0.28.0" apply false
+    id("com.gradleup.nmcp") version "0.0.7" apply false
+    //id("com.gradleup.nmcp")
     kotlin("android")
     kotlin("plugin.serialization")
 }

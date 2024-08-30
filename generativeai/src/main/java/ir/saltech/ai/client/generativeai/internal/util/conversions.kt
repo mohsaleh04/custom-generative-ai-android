@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+@file:OptIn(ExperimentalSerializationApi::class)
+
 package ir.saltech.ai.client.generativeai.internal.util
 
 import android.graphics.Bitmap
@@ -61,6 +63,7 @@ import ir.saltech.ai.client.generativeai.type.Tool
 import ir.saltech.ai.client.generativeai.type.ToolConfig
 import ir.saltech.ai.client.generativeai.type.UsageMetadata
 import ir.saltech.ai.client.generativeai.type.content
+import kotlinx.serialization.ExperimentalSerializationApi
 import java.io.ByteArrayOutputStream
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonObject

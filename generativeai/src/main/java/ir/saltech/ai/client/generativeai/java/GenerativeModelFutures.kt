@@ -32,62 +32,64 @@ import org.reactivestreams.Publisher
  */
 abstract class GenerativeModelFutures internal constructor() {
 
-  /**
-   * Generates a response from the backend with the provided [Content]s.
-   *
-   * @param prompt A group of [Content]s to send to the model.
-   */
-  abstract fun generateContent(vararg prompt: Content): ListenableFuture<GenerateContentResponse>
+    /**
+     * Generates a response from the backend with the provided [Content]s.
+     *
+     * @param prompt A group of [Content]s to send to the model.
+     */
+    abstract fun generateContent(vararg prompt: Content): ListenableFuture<GenerateContentResponse>
 
-  /**
-   * Generates a streaming response from the backend with the provided [Content]s.
-   *
-   * @param prompt A group of [Content]s to send to the model.
-   */
-  abstract fun generateContentStream(vararg prompt: Content): Publisher<GenerateContentResponse>
+    /**
+     * Generates a streaming response from the backend with the provided [Content]s.
+     *
+     * @param prompt A group of [Content]s to send to the model.
+     */
+    abstract fun generateContentStream(vararg prompt: Content): Publisher<GenerateContentResponse>
 
-  /**
-   * Counts the number of tokens used in a prompt.
-   *
-   * @param prompt A group of [Content]s to count tokens of.
-   */
-  abstract fun countTokens(vararg prompt: Content): ListenableFuture<CountTokensResponse>
+    /**
+     * Counts the number of tokens used in a prompt.
+     *
+     * @param prompt A group of [Content]s to count tokens of.
+     */
+    abstract fun countTokens(vararg prompt: Content): ListenableFuture<CountTokensResponse>
 
-  /** Creates a chat instance which internally tracks the ongoing conversation with the model */
-  abstract fun startChat(): ChatFutures
+    /** Creates a chat instance which internally tracks the ongoing conversation with the model */
+    abstract fun startChat(): ChatFutures
 
-  /**
-   * Creates a chat instance which internally tracks the ongoing conversation with the model
-   *
-   * @param history an existing history of context to use as a starting point
-   */
-  abstract fun startChat(history: List<Content>): ChatFutures
+    /**
+     * Creates a chat instance which internally tracks the ongoing conversation with the model
+     *
+     * @param history an existing history of context to use as a starting point
+     */
+    abstract fun startChat(history: List<Content>): ChatFutures
 
-  /** Returns the [GenerativeModel] instance that was used to create this object */
-  abstract fun getGenerativeModel(): GenerativeModel
+    /** Returns the [GenerativeModel] instance that was used to create this object */
+    abstract fun getGenerativeModel(): GenerativeModel
 
-  private class FuturesImpl(private val model: GenerativeModel) : GenerativeModelFutures() {
-    override fun generateContent(
-      vararg prompt: Content
-    ): ListenableFuture<GenerateContentResponse> =
-      SuspendToFutureAdapter.launchFuture { model.generateContent(*prompt) }
+    private class FuturesImpl(private val model: GenerativeModel) : GenerativeModelFutures() {
+        override fun generateContent(
+            vararg prompt: Content
+        ): ListenableFuture<GenerateContentResponse> =
+            SuspendToFutureAdapter.launchFuture { model.generateContent(*prompt) }
 
-    override fun generateContentStream(vararg prompt: Content): Publisher<GenerateContentResponse> =
-      model.generateContentStream(*prompt).asPublisher()
+        override fun generateContentStream(vararg prompt: Content): Publisher<GenerateContentResponse> =
+            model.generateContentStream(*prompt).asPublisher()
 
-    override fun countTokens(vararg prompt: Content): ListenableFuture<CountTokensResponse> =
-      SuspendToFutureAdapter.launchFuture { model.countTokens(*prompt) }
+        override fun countTokens(vararg prompt: Content): ListenableFuture<CountTokensResponse> =
+            SuspendToFutureAdapter.launchFuture { model.countTokens(*prompt) }
 
-    override fun startChat(): ChatFutures = startChat(emptyList())
+        override fun startChat(): ChatFutures = startChat(emptyList())
 
-    override fun startChat(history: List<Content>): ChatFutures = from(model.startChat(history))
+        override fun startChat(history: List<Content>): ChatFutures =
+            ChatFutures.from(model.startChat(history))
 
-    override fun getGenerativeModel(): GenerativeModel = model
-  }
+        override fun getGenerativeModel(): GenerativeModel = model
+    }
 
-  companion object {
+    companion object {
 
-    /** @return a [GenerativeModelFutures] created around the provided [GenerativeModel] */
-    @JvmStatic fun from(model: GenerativeModel): GenerativeModelFutures = FuturesImpl(model)
-  }
+        /** @return a [GenerativeModelFutures] created around the provided [GenerativeModel] */
+        @JvmStatic
+        fun from(model: GenerativeModel): GenerativeModelFutures = FuturesImpl(model)
+    }
 }
