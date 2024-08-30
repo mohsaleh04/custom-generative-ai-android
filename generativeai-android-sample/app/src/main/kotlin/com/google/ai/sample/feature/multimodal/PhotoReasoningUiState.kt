@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.ai.sample.feature.multimodal
+package ir.saltech.ai.sample.feature.multimodal
 
 /**
  * A sealed hierarchy describing the state of the text generation.

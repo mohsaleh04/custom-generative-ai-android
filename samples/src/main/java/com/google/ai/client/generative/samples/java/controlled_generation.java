@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package com.google.ai.client.generative.samples.java;
+package ir.saltech.ai.client.generative.samples.java;
 
 // Set up your API Key
 // ====================
@@ -21,13 +21,13 @@ package com.google.ai.client.generative.samples.java;
 // the "Set up your API Key section" in the [Gemini API
 // quickstart](https://ai.google.dev/gemini-api/docs/quickstart?lang=android#set-up-api-key).
 
-import com.google.ai.client.generativeai.GenerativeModel;
-import com.google.ai.client.generativeai.java.GenerativeModelFutures;
-import com.google.ai.client.generativeai.type.Content;
-import com.google.ai.client.generativeai.type.FunctionType;
-import com.google.ai.client.generativeai.type.GenerateContentResponse;
-import com.google.ai.client.generativeai.type.GenerationConfig;
-import com.google.ai.client.generativeai.type.Schema;
+import ir.saltech.ai.client.generativeai.GenerativeModel;
+import ir.saltech.ai.client.generativeai.java.GenerativeModelFutures;
+import ir.saltech.ai.client.generativeai.type.Content;
+import ir.saltech.ai.client.generativeai.type.FunctionType;
+import ir.saltech.ai.client.generativeai.type.GenerateContentResponse;
+import ir.saltech.ai.client.generativeai.type.GenerationConfig;
+import ir.saltech.ai.client.generativeai.type.Schema;
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;

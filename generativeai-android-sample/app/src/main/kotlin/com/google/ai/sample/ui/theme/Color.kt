@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.ai.sample.ui.theme
+package ir.saltech.ai.sample.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

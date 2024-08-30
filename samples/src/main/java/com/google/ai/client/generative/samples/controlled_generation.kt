@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.ai.client.generative.samples
+package ir.saltech.ai.client.generative.samples
 
-import com.google.ai.client.generativeai.GenerativeModel
-import com.google.ai.client.generativeai.type.FunctionType
-import com.google.ai.client.generativeai.type.Schema
-import com.google.ai.client.generativeai.type.generationConfig
+import ir.saltech.ai.client.generativeai.GenerativeModel
+import ir.saltech.ai.client.generativeai.type.FunctionType
+import ir.saltech.ai.client.generativeai.type.Schema
+import ir.saltech.ai.client.generativeai.type.generationConfig
 
 // Set up your API Key
 // ====================

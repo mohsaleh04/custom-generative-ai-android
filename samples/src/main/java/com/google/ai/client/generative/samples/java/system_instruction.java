@@ -12,11 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package com.google.ai.client.generative.samples.java;
+package ir.saltech.ai.client.generative.samples.java;
 
-import com.google.ai.client.generativeai.GenerativeModel;
-import com.google.ai.client.generativeai.type.Content;
-import com.google.ai.client.generativeai.type.RequestOptions;
+import ir.saltech.ai.client.generativeai.GenerativeModel;
+import ir.saltech.ai.client.generativeai.type.Content;
+import ir.saltech.ai.client.generativeai.type.RequestOptions;
 
 // Set up your API Key
 // ====================

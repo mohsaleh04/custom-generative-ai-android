@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.ai.sample
+package ir.saltech.ai.sample
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth

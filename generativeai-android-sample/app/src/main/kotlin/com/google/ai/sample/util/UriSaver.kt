@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.ai.sample.util
+package ir.saltech.ai.sample.util
 
 import android.net.Uri
 import androidx.compose.runtime.saveable.Saver

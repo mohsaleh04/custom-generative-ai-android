@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package com.google.ai.client.generative.samples;
+package ir.saltech.ai.client.generative.samples;
 
 // This file was manually created for testing purposes only.
 // For instructions on how to generate this file automatically, see the section

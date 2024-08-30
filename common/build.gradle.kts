@@ -30,7 +30,7 @@ ktfmt {
 }
 
 android {
-    namespace = "com.google.ai.client.generativeai.common"
+    namespace = "ir.saltech.ai.client.generativeai.common"
     compileSdk = 34
 
     buildFeatures.buildConfig = true
@@ -104,7 +104,7 @@ dependencies {
 publishing {
     publications {
         register<MavenPublication>("release") {
-            groupId = "com.google.ai.client.generativeai"
+            groupId = "ir.saltech.ai.client.generativeai"
             artifactId = "common"
             version = project.version.toString()
             pom {

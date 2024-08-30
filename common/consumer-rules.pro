@@ -20,4 +20,4 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--keep class com.google.ai.client.generativeai.common.** { *; }
+-keep class ir.saltech.ai.client.generativeai.common.** { *; }

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.ai.sample.feature.chat
+package ir.saltech.ai.sample.feature.chat
 
 import java.util.UUID
 

@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.google.ai.client.generative.samples
+package ir.saltech.ai.client.generative.samples
 
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
-import com.google.ai.client.generativeai.GenerativeModel
-import com.google.ai.client.generativeai.type.Schema
-import com.google.ai.client.generativeai.type.Tool
-import com.google.ai.client.generativeai.type.content
-import com.google.ai.client.generativeai.type.defineFunction
-import com.google.ai.sample.R
+import ir.saltech.ai.client.generativeai.GenerativeModel
+import ir.saltech.ai.client.generativeai.type.Schema
+import ir.saltech.ai.client.generativeai.type.Tool
+import ir.saltech.ai.client.generativeai.type.content
+import ir.saltech.ai.client.generativeai.type.defineFunction
+import ir.saltech.ai.sample.R
 
 // Set up your API Key
 // ====================

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.ai.sample.feature.text
+package ir.saltech.ai.sample.feature.text
 
 /**
  * A sealed hierarchy describing the state of the text generation.

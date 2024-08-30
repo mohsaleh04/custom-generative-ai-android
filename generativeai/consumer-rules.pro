@@ -1,1 +1,1 @@
--keep class com.google.ai.client.generativeai.internal.** { *; }
+-keep class ir.saltech.ai.client.generativeai.internal.** { *; }

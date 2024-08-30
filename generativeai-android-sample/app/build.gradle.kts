@@ -21,11 +21,11 @@ plugins {
 }
 
 android {
-    namespace = "com.google.ai.sample"
+    namespace = "ir.saltech.ai.sample"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.google.ai.sample"
+        applicationId = "ir.saltech.ai.sample"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
@@ -91,5 +91,5 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
-    implementation("com.google.ai.client.generativeai:generativeai:0.9.0")
+    implementation("ir.saltech.ai.client.generativeai:generativeai:0.9.0")
 }

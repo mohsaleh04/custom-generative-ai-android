@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.ai.client.generative.samples
+package ir.saltech.ai.client.generative.samples
 
-import com.google.ai.client.generativeai.GenerativeModel
-import com.google.ai.client.generativeai.type.BlockThreshold
-import com.google.ai.client.generativeai.type.HarmCategory
-import com.google.ai.client.generativeai.type.SafetySetting
+import ir.saltech.ai.client.generativeai.GenerativeModel
+import ir.saltech.ai.client.generativeai.type.BlockThreshold
+import ir.saltech.ai.client.generativeai.type.HarmCategory
+import ir.saltech.ai.client.generativeai.type.SafetySetting
 
 // Set up your API Key
 // ====================

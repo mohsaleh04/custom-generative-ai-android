@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.ai.sample.feature.multimodal
+package ir.saltech.ai.sample.feature.multimodal
 
 import android.graphics.drawable.BitmapDrawable
 import android.net.Uri
@@ -64,10 +64,10 @@ import coil.ImageLoader
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import coil.request.SuccessResult
-import com.google.ai.sample.GenerativeViewModelFactory
+import ir.saltech.ai.sample.GenerativeViewModelFactory
 import coil.size.Precision
-import com.google.ai.sample.R
-import com.google.ai.sample.util.UriSaver
+import ir.saltech.ai.sample.R
+import ir.saltech.ai.sample.util.UriSaver
 import kotlinx.coroutines.launch
 
 @Composable

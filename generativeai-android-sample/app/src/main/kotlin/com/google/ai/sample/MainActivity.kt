@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.ai.sample
+package ir.saltech.ai.sample
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -26,10 +26,10 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.google.ai.sample.feature.chat.ChatRoute
-import com.google.ai.sample.feature.multimodal.PhotoReasoningRoute
-import com.google.ai.sample.feature.text.SummarizeRoute
-import com.google.ai.sample.ui.theme.GenerativeAISample
+import ir.saltech.ai.sample.feature.chat.ChatRoute
+import ir.saltech.ai.sample.feature.multimodal.PhotoReasoningRoute
+import ir.saltech.ai.sample.feature.text.SummarizeRoute
+import ir.saltech.ai.sample.ui.theme.GenerativeAISample
 
 class MainActivity : ComponentActivity() {
 

@@ -39,19 +39,19 @@ gradlePlugin {
     plugins {
         register("license-plugin") {
             id = "license-plugin"
-            implementationClass = "com.google.gradle.plugins.LicensePlugin"
+            implementationClass = "ir.saltech.gradle.plugins.LicensePlugin"
         }
         register("changelog-plugin") {
             id = "changelog-plugin"
-            implementationClass = "com.google.gradle.plugins.ChangelogPlugin"
+            implementationClass = "ir.saltech.gradle.plugins.ChangelogPlugin"
         }
         register("release-plugin") {
             id = "release-plugin"
-            implementationClass = "com.google.gradle.plugins.ReleasePlugin"
+            implementationClass = "ir.saltech.gradle.plugins.ReleasePlugin"
         }
         register("multi-project-plugin") {
             id = "multi-project-plugin"
-            implementationClass = "com.google.gradle.plugins.MultiProjectPlugin"
+            implementationClass = "ir.saltech.gradle.plugins.MultiProjectPlugin"
         }
     }
 }

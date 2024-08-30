@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.ai.sample.feature.text
+package ir.saltech.ai.sample.feature.text
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.google.ai.client.generativeai.GenerativeModel
+import ir.saltech.ai.client.generativeai.GenerativeModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

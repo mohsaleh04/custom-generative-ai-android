@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.google.ai.client.generative.samples
+package ir.saltech.ai.client.generative.samples
 
-import com.google.ai.client.generativeai.GenerativeModel
-import com.google.ai.client.generativeai.type.FunctionResponsePart
-import com.google.ai.client.generativeai.type.InvalidStateException
-import com.google.ai.client.generativeai.type.Schema
-import com.google.ai.client.generativeai.type.Tool
-import com.google.ai.client.generativeai.type.content
-import com.google.ai.client.generativeai.type.defineFunction
+import ir.saltech.ai.client.generativeai.GenerativeModel
+import ir.saltech.ai.client.generativeai.type.FunctionResponsePart
+import ir.saltech.ai.client.generativeai.type.InvalidStateException
+import ir.saltech.ai.client.generativeai.type.Schema
+import ir.saltech.ai.client.generativeai.type.Tool
+import ir.saltech.ai.client.generativeai.type.content
+import ir.saltech.ai.client.generativeai.type.defineFunction
 import org.json.JSONObject
 
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.ai.sample.feature.chat
+package ir.saltech.ai.sample.feature.chat
 
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
@@ -56,9 +56,9 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.google.ai.sample.GenerativeViewModelFactory
-import com.google.ai.sample.R
-import com.google.ai.sample.ui.theme.GenerativeAISample
+import ir.saltech.ai.sample.GenerativeViewModelFactory
+import ir.saltech.ai.sample.R
+import ir.saltech.ai.sample.ui.theme.GenerativeAISample
 import kotlinx.coroutines.launch
 
 @Composable

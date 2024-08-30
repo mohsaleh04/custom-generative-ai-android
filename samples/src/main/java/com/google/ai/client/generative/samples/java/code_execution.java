@@ -12,18 +12,18 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package com.google.ai.client.generative.samples.java;
+package ir.saltech.ai.client.generative.samples.java;
 
 
-import com.google.ai.client.generativeai.GenerativeModel;
-import com.google.ai.client.generativeai.java.ChatFutures;
-import com.google.ai.client.generativeai.java.GenerativeModelFutures;
-import com.google.ai.client.generativeai.type.Candidate;
-import com.google.ai.client.generativeai.type.Content;
-import com.google.ai.client.generativeai.type.GenerateContentResponse;
-import com.google.ai.client.generativeai.type.Part;
-import com.google.ai.client.generativeai.type.RequestOptions;
-import com.google.ai.client.generativeai.type.Tool;
+import ir.saltech.ai.client.generativeai.GenerativeModel;
+import ir.saltech.ai.client.generativeai.java.ChatFutures;
+import ir.saltech.ai.client.generativeai.java.GenerativeModelFutures;
+import ir.saltech.ai.client.generativeai.type.Candidate;
+import ir.saltech.ai.client.generativeai.type.Content;
+import ir.saltech.ai.client.generativeai.type.GenerateContentResponse;
+import ir.saltech.ai.client.generativeai.type.Part;
+import ir.saltech.ai.client.generativeai.type.RequestOptions;
+import ir.saltech.ai.client.generativeai.type.Tool;
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;

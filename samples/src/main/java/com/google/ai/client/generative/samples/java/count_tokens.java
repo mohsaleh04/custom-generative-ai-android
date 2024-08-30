@@ -12,23 +12,23 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package com.google.ai.client.generative.samples.java;
+package ir.saltech.ai.client.generative.samples.java;
 
-import static com.google.ai.client.generativeai.type.FunctionDeclarationsKt.defineFunction;
+import static ir.saltech.ai.client.generativeai.type.FunctionDeclarationsKt.defineFunction;
 
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import com.google.ai.client.generativeai.GenerativeModel;
-import com.google.ai.client.generativeai.java.ChatFutures;
-import com.google.ai.client.generativeai.java.GenerativeModelFutures;
-import com.google.ai.client.generativeai.type.Content;
-import com.google.ai.client.generativeai.type.CountTokensResponse;
-import com.google.ai.client.generativeai.type.FunctionDeclaration;
-import com.google.ai.client.generativeai.type.RequestOptions;
-import com.google.ai.client.generativeai.type.Schema;
-import com.google.ai.client.generativeai.type.Tool;
-import com.google.ai.sample.R;
+import ir.saltech.ai.client.generativeai.GenerativeModel;
+import ir.saltech.ai.client.generativeai.java.ChatFutures;
+import ir.saltech.ai.client.generativeai.java.GenerativeModelFutures;
+import ir.saltech.ai.client.generativeai.type.Content;
+import ir.saltech.ai.client.generativeai.type.CountTokensResponse;
+import ir.saltech.ai.client.generativeai.type.FunctionDeclaration;
+import ir.saltech.ai.client.generativeai.type.RequestOptions;
+import ir.saltech.ai.client.generativeai.type.Schema;
+import ir.saltech.ai.client.generativeai.type.Tool;
+import ir.saltech.ai.sample.R;
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;

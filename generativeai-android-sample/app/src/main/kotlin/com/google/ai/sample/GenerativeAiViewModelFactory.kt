@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.google.ai.sample
+package ir.saltech.ai.sample
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.CreationExtras
-import com.google.ai.client.generativeai.GenerativeModel
-import com.google.ai.client.generativeai.type.generationConfig
-import com.google.ai.sample.feature.chat.ChatViewModel
-import com.google.ai.sample.feature.multimodal.PhotoReasoningViewModel
-import com.google.ai.sample.feature.text.SummarizeViewModel
+import ir.saltech.ai.client.generativeai.GenerativeModel
+import ir.saltech.ai.client.generativeai.type.generationConfig
+import ir.saltech.ai.sample.feature.chat.ChatViewModel
+import ir.saltech.ai.sample.feature.multimodal.PhotoReasoningViewModel
+import ir.saltech.ai.sample.feature.text.SummarizeViewModel
 
 val GenerativeViewModelFactory = object : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(
